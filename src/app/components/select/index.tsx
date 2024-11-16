@@ -1,7 +1,7 @@
 import './selectStyle.css'
 
 
-export const Select = ({}:any) => {
+export const Select = () => {
 
     return (
         <div className='selectContainer'>

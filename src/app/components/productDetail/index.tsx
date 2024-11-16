@@ -2,7 +2,7 @@ import './productDetailStyle.css'
 import { Select } from '../select'
 import { MdFavorite } from "react-icons/md";
 
-export const ProductDetail = ({id}: any) => {
+export const ProductDetail = ({id}: {id: number} ) => {
 
     return (
         <div className='productDetail'>
