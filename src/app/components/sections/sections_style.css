@@ -1,0 +1,150 @@
+.sectionsContainer {
+    width: 80%;
+    max-width: 1200px;
+    margin: 60px auto 40px auto;
+    display: flex;
+    gap: 50px;
+    cursor: pointer;
+
+    .sectionCard {
+        border: solid 5px var(--black-1);
+        height: 250px;
+        width: 50%;
+        border-radius: 16px;
+        display: flex;
+        box-shadow: 0px 6px 8px rgb(20, 20, 20, 0.3);
+        padding: 0px 30px;
+
+
+        .cardImageContainer {
+            width: 50%;
+            height: 100%;
+        }
+
+        .cardImage {
+            height: 100%;
+            width: auto;
+        }
+
+
+        .titleContainer {
+            width: 50%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            h2 {
+                font-size: 50px;
+                width: 220px;
+                text-align: center;
+                font-family: "Mochiy Pop One", sans-serif;
+                color: var(--black-1);
+                line-height: 55px;
+                letter-spacing: 4px;
+            }
+        }
+    }
+}
+
+@media (max-width: 1400px) {
+    .sectionsContainer{
+        gap: 16px;
+    }
+}
+
+@media (max-width: 1200px) {
+
+.sectionsContainer{
+        .sectionCard {
+            height: 200px;
+
+            .titleContainer{
+                h2 {
+                    font-size: 40px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1100px) {
+    .sectionsContainer{
+        gap: 20px;
+
+        .sectionCard {
+            .titleContainer{
+                h2 {
+                    font-size: 30px;
+                    line-height: 40px;
+                }
+            }
+        }
+    }
+}
+
+
+
+@media (max-width: 1000px) {
+    .sectionsContainer{
+        max-width: 500px;
+        gap: 10px;
+        max-width: none;
+
+        .sectionCard {
+            width: 100%;
+            height: 250px;
+            flex-direction: column;
+            position: relative;
+            
+            .cardImage {
+                height: 90%;
+                width: auto;
+                position: absolute;
+                top: -50px;
+                left: 0px;
+                right: 0px;
+                margin: 0px auto;
+
+            }
+
+            .cardImageContainer {
+                height: 70%;
+                margin: 0px auto;
+
+                .image2 {
+                    position: absolute;
+                    width: auto;
+                    height: 100%;
+                    top: -70px;
+                    left: 0px;
+                    right: 0px;
+                    margin: 0px auto;
+                    z-index: 2;
+                }
+            }
+
+            .titleContainer{
+                width: 100%;
+                height: 100px;
+                h2 {
+                    width: 100%;
+                    font-size: 18px;
+                    line-height: 30px;
+                }
+            }
+        }
+
+        .sectionCard2 {
+            flex-direction: column-reverse;
+        }
+    }
+}
+
+@media (max-width: 700px) {
+    .sectionsContainer{
+        flex-direction: column;
+        gap: 70px;
+
+    }           
+}

@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Knewave&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap');
+
+:root {
+  --black-1: #505050;
+  --white-1: #EDEDED;
+  --red: #FA5D5D;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    
+    --foreground: #ededed;
+  }
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  min-height: 100vh;
+  background: linear-gradient(90deg, rgba(50, 50, 50, 0.15) 0%, #EDEDED 10%, #EDEDED 90%, rgba(50, 50, 50, 0.15) 100%);
+
+}
+
+body::-webkit-scrollbar {
+  background-color: var(--white-1);
+  width: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--red);
+  border-radius: 5px;
+}
+
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+ul, li {
+  list-style: none;
+}
+
+h1, h2, h3, h4, p, a, span, button, b {
+  font-family: "Inter", system-ui;
+  
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+}

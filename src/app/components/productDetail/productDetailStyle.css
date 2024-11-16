@@ -1,0 +1,219 @@
+.productDetail {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-bottom: 100px;
+    
+    .titleContainer {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        h1 {
+            font-size: 40px;
+            letter-spacing: 2px;
+            color: var(--black-1);
+        }
+
+        p {
+            color: var(--red);
+            font-size: 20px;
+            font-weight: 600;
+        }
+    }
+
+    .priceContainer {
+        display: flex;
+        justify-content: space-between;
+        /* margin-top: 50px; */
+
+        .line {
+            width: 40px;
+            height: 6px;
+            background-color: var(--black-1);
+            align-self: center;
+        }
+
+        .price {
+            font-size: 28px;
+            font-weight: 600;
+            color: var(--black-1);
+        }
+
+        .discount {
+            background-color: var(--red);
+            padding: 0px 25px;
+            display: flex;
+            align-items: center;
+            font-size: 28px;
+            font-weight: 600;
+            color: var(--white-1);
+            border-radius: 8px;
+            width: fit-content;
+        }
+
+        .icon {
+            height: 40px;
+            width: 40px;
+            color: var(--black-1);
+        }
+    }
+
+    .textDetail {
+        width: 100%;
+        height: 200px;
+        background-color: var(--black-1);
+        border-radius: 16px;
+        padding: 16px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        overflow-y: auto;
+
+        p {
+            color: var(--white-1);
+            font-size: 20px;
+        }
+    }
+
+    .buttonContainer {
+        display: flex;
+        height: 60px;
+        gap: 25px;
+        justify-content: space-between;
+
+        .value {
+            display: flex;
+            border: solid var(--black-1) 4px;
+            border-radius: 16px;
+            
+            button {
+                width: 50px;
+                background-color: transparent;
+                border: none;
+                font-size: 40px;
+                font-weight: 700;
+                color: var(--black-1);
+            }
+
+            p {
+                width: 50px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 30px;
+                font-weight: 600;
+                color: var(--black-1);
+            }
+        }
+
+        .buttonAdd {
+            width: 100%;
+            background-color: var(--red);
+            border: none;
+            border-radius: 16px;
+            color: var(--white-1);
+            font-weight: 600;
+            font-size: 28px;
+        }
+    }
+
+    .detail {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+
+        .title {
+            color: var(--red);
+            font-size: 30px;
+            font-weight: 600;
+        }
+
+        ul {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+
+            li {
+                display: flex;
+                justify-content: space-between;
+                font-size: 26px;
+                font-weight: 600;
+                color: var(--black-1);
+                border-bottom: 3px solid var(--black-1);
+                padding-bottom: 10px;
+            }
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .productDetail {
+        .priceContainer {
+            .price {
+                font-size: 24px;
+            }
+        }
+    }
+}
+
+@media (max-width: 1000px) {
+
+    .productDetail {
+        .priceContainer {
+            justify-content: start;
+            gap: 16px;
+        }
+    }
+
+    }
+
+@media (max-width: 500px) {
+    .productDetail {
+        .textDetail {
+            p {
+                font-size: 18px;
+            }
+        }
+
+        .titleContainer {
+            h1 {
+                font-size: 32px;
+            }
+    
+            p {
+                font-size: 18px;
+            }
+        }
+
+        .priceContainer {
+            /* background-color: red; */
+            /* flex-direction: column; */
+            flex-wrap: wrap;
+        }
+
+        .buttonContainer {
+            
+            .value {
+                padding: 0px 10px;
+                gap: 0px;
+
+                p {
+                    width: 30px;
+                    font-size: 22px;
+                }
+
+                button {
+                    
+                    width: 25px;
+                }
+            }
+
+            .buttonAdd {
+                font-size: 20px;
+            }
+        }
+    }
+}

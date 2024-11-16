@@ -1,0 +1,66 @@
+.footer {
+    min-height: 250px;
+    width: 100vw;
+    background-color: var(--black-1);
+    padding: 24px 32px;
+
+    .container {
+        max-width: 1350px;
+        margin: 0px auto;
+        display: flex;
+        gap: 50px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .info {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        min-width: 250px;
+        
+        .infoTitle {
+            color: var(--red);
+            font-size: 28px;
+        }
+        
+        p {
+            color: var(--red);
+            font-size: 18px;
+            font-weight: 600;
+            cursor: pointer;
+        }
+
+        .textWhite {
+            color: var(--white-1);
+            font-weight: 600;
+            font-size: 18px;
+            cursor: pointer;
+        }
+    }
+
+    .social{
+        .logoImage {
+            width: 40px;
+            height: 40px;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+    
+            p {
+                font-size: 26px;
+                color: var(--white-1);
+                font-family: "Knewave", system-ui;
+                color: var(--red);
+
+                b {
+                    color: var(--white-1);
+                    font-family: "Knewave", system-ui;
+                }
+            }
+        }
+    } 
+}
